@@ -37,3 +37,5 @@ function! Smart_TabComplete()
 endfunction
 
 inoremap <tab> <c-r>=Smart_TabComplete()<CR>
+nmap <F2> :wa<CR>
+nmap <tab> :bNext<CR>
