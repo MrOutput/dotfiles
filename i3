@@ -53,6 +53,13 @@ bindsym Mod1+$down focus down
 bindsym Mod1+$up focus up
 bindsym Mod1+$right focus right
 
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
 # alternatively, you can use the cursor keys:
 bindsym Mod1+Left focus left
 bindsym Mod1+Down focus down
