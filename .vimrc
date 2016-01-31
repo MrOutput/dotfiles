@@ -1,4 +1,4 @@
-syntax on
+syntax enable
 colo base16-default
 set background=dark
 filetype plugin on
