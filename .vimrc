@@ -11,6 +11,7 @@ set ignorecase
 set expandtab
 set shiftwidth=4
 set tabstop=4
+set autoindent
 set smartindent
 autocmd FileType html setlocal shiftwidth=4 tabstop=4
 autocmd FileType javascript setlocal expandtab shiftwidth=8 softtabstop=8
