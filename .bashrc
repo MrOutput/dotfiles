@@ -3,6 +3,7 @@ alias grep="grep --color=always"
 alias ls="ls --color=always"
 alias ll="ls -l"
 alias up="sudo pacman -Syu"
+export CC=/usr/bin/colorgcc
 
 # Less Colors for Man Pages
 export LESS_TERMCAP_mb=$'\e[01;31m'       # begin blinking
