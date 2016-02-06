@@ -4,6 +4,14 @@ export PATH="/usr/lib/ccache/bin/:$PATH"
 
 
 export CC=/usr/bin/colorgcc
+
+alias vi=vim
+alias grep="grep --color"
+alias ls="ls --color"
+alias ll="ls -l"
+alias up="sudo pacman -Syu"
+alias ip="ip -c"
+
 export LESS_TERMCAP_mb=$'\e[01;31m'       # begin blinking
 export LESS_TERMCAP_md=$'\e[01;38;5;74m'  # begin bold
 export LESS_TERMCAP_me=$'\e[0m'           # end mode
