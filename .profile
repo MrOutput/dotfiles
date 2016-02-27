@@ -1,9 +1,4 @@
-ccache -M 1.5 -F 0
-export PATH=/usr/share/perl5/vendor_perl/auto/share/dist/Cope:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
-export PATH="/usr/lib/ccache/bin/:$PATH"
-
-
-export CC=/usr/bin/colorgcc
+export EDITOR=/usr/bin/vim
 
 alias vi=vim
 alias grep="grep --color"

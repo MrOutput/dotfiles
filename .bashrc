@@ -1,5 +1,6 @@
 alias vi=vim
 alias grep="grep --color=always"
+alias ip="ip --color"
 alias ls="ls --color=always"
 alias ll="ls -l"
 alias up="sudo pacman -Syu"
