@@ -41,6 +41,7 @@ set omnifunc=syntaxcomplete#Complete
 set hlsearch
 set incsearch
 set nu
+set mouse=a
 set ignorecase
 set expandtab
 set shiftwidth=4
