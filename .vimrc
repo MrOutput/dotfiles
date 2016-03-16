@@ -15,7 +15,26 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Shougo/neocomplete.vim'
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+
 Plugin 'Shougo/neosnippet.vim'
+" Plugin key-mappings.
+imap <C-c>     <Plug>(neosnippet_expand_or_jump)
+smap <C-c>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-c>     <Plug>(neosnippet_expand_target)
+
+imap <expr><TAB>
+ \ pumvisible() ? "\<C-n>" :
+ \ neosnippet#expandable_or_jumpable() ?
+ \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+Plugin 'Shougo/neosnippet-snippets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -49,7 +68,7 @@ set tabstop=4
 set autoindent
 set smartindent
 autocmd FileType html setlocal shiftwidth=4 tabstop=4
-autocmd FileType javascript setlocal expandtab shiftwidth=8 softtabstop=8
+autocmd FileType javascript setlocal expandtab shiftwidth=4 softtabstop=4
 
 nmap <F2> :wa<CR>
 nmap <F3> :CtrlP<CR>
