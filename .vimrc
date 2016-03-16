@@ -73,3 +73,4 @@ autocmd FileType javascript setlocal expandtab shiftwidth=4 softtabstop=4
 nmap <F2> :wa<CR>
 nmap <F3> :CtrlP<CR>
 nmap <tab> :bNext<CR>
+nmap <S-tab> :bprevious<CR>
