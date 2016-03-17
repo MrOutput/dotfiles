@@ -74,6 +74,8 @@ autocmd FileType javascript setlocal expandtab shiftwidth=4 softtabstop=4
 highlight Pmenu ctermbg=0 ctermfg=3
 highlight PmenuSel ctermbg=3 ctermfg=0
 highlight Visual ctermbg=3 ctermfg=0
+set cursorline
+highlight CursorLine ctermbg=16
 
 nmap <F2> :wa<CR>
 nmap <F3> :CtrlP<CR>
