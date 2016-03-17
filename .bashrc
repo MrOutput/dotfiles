@@ -1,3 +1,6 @@
+export EDITOR=/usr/bin/vim
+export VISUAL=/usr/bin/vim
+
 alias vi=vim
 alias grep="grep --color=always"
 alias ip="ip --color"
