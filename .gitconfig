@@ -1,0 +1,11 @@
+[user]
+	email = rcepeda1993@gmail.com
+	name = Rafael Cepeda
+[core]
+    editor = vim
+    pager = less
+[color]
+    branch
+    diff
+    grep
+    status
