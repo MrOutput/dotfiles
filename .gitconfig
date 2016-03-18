@@ -9,3 +9,5 @@
     diff
     grep
     status
+[push]
+    default = simple
