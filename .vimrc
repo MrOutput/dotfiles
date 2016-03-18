@@ -82,5 +82,7 @@ highlight TabLineFill ctermbg=2
 
 nmap <F2> :wa<CR>
 nmap <F3> :CtrlP<CR>
+nmap <F7> :tabprev<CR>
+nmap <F8> :tabnext<CR>
 nmap <tab> :bNext<CR>
 nmap <S-tab> :bprevious<CR>
