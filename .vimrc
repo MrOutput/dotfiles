@@ -67,7 +67,7 @@ set shiftwidth=4
 set tabstop=4
 set autoindent
 set smartindent
-autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType html setlocal shiftwidth=4 tabstop=4
 autocmd FileType jade setlocal shiftwidth=4 tabstop=4
 autocmd FileType javascript setlocal expandtab shiftwidth=4 softtabstop=4
 
@@ -76,9 +76,11 @@ highlight PmenuSel ctermbg=3 ctermfg=0
 highlight Visual ctermbg=3 ctermfg=0
 set cursorline
 highlight CursorLine ctermbg=16
+highlight CursorLineNr ctermfg=10 ctermbg=8
 highlight TabLineSel ctermbg=8 ctermfg=2
 highlight TabLine ctermbg=2
 highlight TabLineFill ctermbg=2
+highlight Todo ctermbg=3 ctermfg=16
 
 nmap <F2> :wa<CR>
 nmap <F3> :CtrlP<CR>
