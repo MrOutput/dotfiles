@@ -1,5 +1,5 @@
 pcm.!default {
     type hw
-    card 4
+    card 0
     device 3
 }
