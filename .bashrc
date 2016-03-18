@@ -2,6 +2,7 @@ export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 
 alias vi=vim
+alias G=grep
 alias grep="grep --color=always"
 alias ip="ip --color"
 alias ls="ls --color=always"
