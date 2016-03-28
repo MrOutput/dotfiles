@@ -36,6 +36,7 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'mattn/emmet-vim'
+Plugin 'rust-lang/rust.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,7 +57,7 @@ syntax enable
 colo base16-default
 set background=dark
 filetype plugin on
-set omnifunc=syntaxcomplete#Complete
+" set omnifunc=syntaxcomplete#Complete
 
 set hlsearch
 set incsearch
