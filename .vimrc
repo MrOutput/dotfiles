@@ -37,6 +37,8 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'mattn/emmet-vim'
 Plugin 'rust-lang/rust.vim'
+Plugin 'majutsushi/tagbar'
+nmap <f9> :TagbarToggle<cr>
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -89,4 +91,4 @@ nmap <F3> :CtrlP<CR>
 nmap <F7> :tabprev<CR>
 nmap <F8> :tabnext<CR>
 nmap <tab> :bNext<CR>
-nmap <S-tab> :bprevious<CR>
+nmap <S-Tab> :bprevious<CR>
