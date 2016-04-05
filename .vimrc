@@ -74,6 +74,7 @@ set smartindent
 autocmd FileType html setlocal shiftwidth=4 tabstop=4
 autocmd FileType jade setlocal shiftwidth=4 tabstop=4
 autocmd FileType javascript setlocal expandtab shiftwidth=4 softtabstop=4
+autocmd FileType asm setlocal shiftwidth=8 tabstop=8 noexpandtab
 
 highlight Pmenu ctermbg=0 ctermfg=3
 highlight PmenuSel ctermbg=3 ctermfg=0
