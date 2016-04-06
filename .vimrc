@@ -40,6 +40,8 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'majutsushi/tagbar'
 nmap <f9> :TagbarToggle<cr>
 
+Plugin 'digitaltoad/vim-pug'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
