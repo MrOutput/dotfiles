@@ -141,3 +141,5 @@ alias gvt='git verify-tag'
 
 alias gwch='git whatchanged -p --abbrev-commit --pretty=medium'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit -m "--wip--"'
+
+$HOME/dotfiles/shell_colors/base16-eighties.dark.sh

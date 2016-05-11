@@ -1,10 +1,15 @@
 #!/bin/bash
-ln -s /home/$USER/dotfiles/.asoundrc       /home/$USER/.asoundrc
-ln -s /home/$USER/dotfiles/.bashrc         /home/$USER/.bashrc
-ln -s /home/$USER/dotfiles/i3              /home/$USER/.config/i3/config
-ln -s /home/$USER/dotfiles/.vimrc          /home/$USER/.vimrc
-ln -s /home/$USER/dotfiles/.Xresources     /home/$USER/.Xresources
-ln -s /home/$USER/dotfiles/.xinitrc        /home/$USER/.xinitrc
-ln -s /home/$USER/dotfiles/.gitconfig        /home/$USER/.gitconfig
+dotfiles=$HOME/dotfiles
+
+ln -s $dotfiles/.asoundrc       $HOME/.asoundrc
+ln -s $dotfiles/.bashrc         $HOME/.bashrc
+ln -s $dotfiles/i3              $HOME/.config/i3/config
+ln -s $dotfiles/.vimrc          $HOME/.vimrc
+ln -s $dotfiles/.Xresources     $HOME/.Xresources
+ln -s $dotfiles/.xinitrc        $HOME/.xinitrc
+ln -s $dotfiles/.gitconfig      $HOME/.gitconfig
+
+mkdir -p $HOME/.vim
+ln -s $dotfiles/vim_colors             $HOME/.vim/colors
 
 echo "Installed Successfully!"
