@@ -1,6 +1,8 @@
 ! https://en.wikipedia.org/wiki/Fixed_(typeface)
 
 URxvt*scrollBar:                      false
+URxvt*borderColor: #2d2d2d
+
 
 URxvt.font: 10x20
 URxvt*termName: rxvt-unicode
