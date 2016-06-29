@@ -47,6 +47,7 @@ Plugin 'morhetz/gruvbox'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'vim-scripts/desertEx'
 Plugin 'juanedi/predawn.vim'
+Plugin 'endel/vim-github-colorscheme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -64,6 +65,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax enable
+let base16colorspace=256
 colo base16-eighties
 " set background=dark
 filetype plugin on
