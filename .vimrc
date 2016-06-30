@@ -41,9 +41,6 @@ Plugin 'majutsushi/tagbar'
 nmap <f9> :TagbarToggle<cr>
 
 Plugin 'digitaltoad/vim-pug'
-<<<<<<< HEAD
-Plugin 'shirk/vim-gas'
-=======
 Plugin 'stulzer/heroku-colorscheme'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'morhetz/gruvbox'
@@ -51,7 +48,6 @@ Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'vim-scripts/desertEx'
 Plugin 'juanedi/predawn.vim'
 Plugin 'endel/vim-github-colorscheme'
->>>>>>> ae83f80b68f688d4f4fb1c6dbf0cfff2cf1c0dfa
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
