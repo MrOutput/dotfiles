@@ -100,6 +100,11 @@ autocmd FileType asm setlocal shiftwidth=8 tabstop=8 noexpandtab
 " highlight TabLineFill ctermbg=2
 " highlight Todo ctermbg=3 ctermfg=16
 
+nmap <F12> :if exists("g:syntax_on") <Bar>
+\   syntax off <Bar>
+\ else <Bar>
+\   syntax enable <Bar>
+\ endif <CR>
 nmap <F2> :wa<CR>
 nmap <F3> :CtrlP<CR>
 nmap <F7> :tabprev<CR>
