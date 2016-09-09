@@ -52,6 +52,14 @@ Plugin 'vim-scripts/desertEx'
 Plugin 'juanedi/predawn.vim'
 Plugin 'endel/vim-github-colorscheme'
 
+Plugin 'Chiel92/vim-autoformat'
+noremap <F5> :Autoformat<CR>
+let g:formatterpath = ["/usr/bin/astyle"]                                                                                                     
+let g:formatter_c = ['c']                                                                                                                     
+let g:formatter_h = ['h']                                                                                                                     
+																																			 
+autocmd BufRead,BufNewFile *.h set filetype=c
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -109,5 +117,6 @@ nmap <F2> :wa<CR>
 nmap <F3> :CtrlP<CR>
 nmap <F7> :tabprev<CR>
 nmap <F8> :tabnext<CR>
-nmap <tab> :bNext<CR>
 nmap <S-Tab> :bprevious<CR>
+nmap <del> :bd<CR>
+nmap <tab> :bNext<CR>
