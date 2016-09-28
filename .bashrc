@@ -1,6 +1,8 @@
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 
+"$HOME/base16-github.sh"
+
 alias vi=vim
 alias G=grep
 alias grep="grep --color=always"

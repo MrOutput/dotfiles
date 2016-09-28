@@ -1,9 +1,4 @@
-! https://en.wikipedia.org/wiki/Fixed_(typeface)
-#include ".Xresources.d/colorscheme"
-
-URxvt*scrollBar:                      false
-URxvt*borderColor: #2d2d2d
-
+URxvt*scrollBar: false
 URxvt*termName: rxvt-unicode
-
-URxvt.font: xft:Bitstream Vera Sans Mono:size=12
+URxvt.font: xft:DejaVu Sans Mono:size=10
+URxvt.letterSpace: -2

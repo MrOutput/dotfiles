@@ -66,8 +66,9 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax enable
-colo base16-eighties
-set background=dark
+let base16colorspace=256
+colo base16-github
+
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
