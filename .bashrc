@@ -1,6 +1,5 @@
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
-$HOME/dotfiles/shell_colors/base16-eighties.dark.sh
 
 alias vi=vim
 alias G=grep

@@ -9,7 +9,4 @@ ln -s $dotfiles/.Xresources     $HOME/.Xresources
 ln -s $dotfiles/.xinitrc        $HOME/.xinitrc
 ln -s $dotfiles/.gitconfig      $HOME/.gitconfig
 
-mkdir -p $HOME/.vim
-ln -s $dotfiles/vim_colors             $HOME/.vim/colors
-
 echo "Installed Successfully!"

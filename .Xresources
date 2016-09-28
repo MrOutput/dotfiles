@@ -1,11 +1,9 @@
 ! https://en.wikipedia.org/wiki/Fixed_(typeface)
+#include ".Xresources.d/colorscheme"
 
 URxvt*scrollBar:                      false
 URxvt*borderColor: #2d2d2d
 
-
-URxvt.font: 10x20
 URxvt*termName: rxvt-unicode
-URxvt*boldFont: 10x20B
-URxvt*italicFont: 10x20O
-URxvt*boldItalicFont: 10x20OB
+
+URxvt.font: xft:Bitstream Vera Sans Mono:size=12

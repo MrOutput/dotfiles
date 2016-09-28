@@ -39,25 +39,15 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'mattn/emmet-vim'
-Plugin 'rust-lang/rust.vim'
 Plugin 'majutsushi/tagbar'
 nmap <f9> :TagbarToggle<cr>
 
 Plugin 'digitaltoad/vim-pug'
-Plugin 'stulzer/heroku-colorscheme'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'morhetz/gruvbox'
-Plugin 'chriskempson/vim-tomorrow-theme'
-Plugin 'vim-scripts/desertEx'
-Plugin 'juanedi/predawn.vim'
-Plugin 'endel/vim-github-colorscheme'
-
 Plugin 'Chiel92/vim-autoformat'
 noremap <F5> :Autoformat<CR>
-let g:formatterpath = ["/usr/bin/astyle"]                                                                                                     
-let g:formatter_c = ['c']                                                                                                                     
-let g:formatter_h = ['h']                                                                                                                     
-																																			 
+let g:formatterpath = ["/usr/bin/astyle"]
+let g:formatter_c = ['c']
+let g:formatter_h = ['h']
 autocmd BufRead,BufNewFile *.h set filetype=c
 
 " All of your Plugins must be added before the following line
@@ -76,11 +66,10 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax enable
-let base16colorspace=256
 colo base16-eighties
-" set background=dark
+set background=dark
 filetype plugin on
-" set omnifunc=syntaxcomplete#Complete
+set omnifunc=syntaxcomplete#Complete
 
 set hlsearch
 set incsearch
@@ -96,17 +85,6 @@ autocmd FileType html setlocal shiftwidth=4 tabstop=4
 autocmd FileType jade setlocal shiftwidth=4 tabstop=4
 autocmd FileType javascript setlocal expandtab shiftwidth=4 softtabstop=4
 autocmd FileType asm setlocal shiftwidth=8 tabstop=8 noexpandtab
-
-" highlight Pmenu ctermbg=0 ctermfg=3
-" highlight PmenuSel ctermbg=3 ctermfg=0
-" highlight Visual ctermbg=3 ctermfg=0
-" set cursorline
-" highlight CursorLine ctermbg=16
-" highlight CursorLineNr ctermfg=10 ctermbg=8
-" highlight TabLineSel ctermbg=8 ctermfg=2
-" highlight TabLine ctermbg=2
-" highlight TabLineFill ctermbg=2
-" highlight Todo ctermbg=3 ctermfg=16
 
 nmap <F12> :if exists("g:syntax_on") <Bar>
 \   syntax off <Bar>
