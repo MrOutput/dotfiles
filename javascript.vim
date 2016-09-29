@@ -15,13 +15,14 @@ endif
 syn keyword keywords break do in typeof case else instanceof var catch export new void class extends return while const finally super with continue for switch yield debugger function this default if throw delete import try let yield static arguments
 
 "punctuators { ( ) [ ] . ... ; , < > <= >= == != === !== + - * % ++ -- << >> >>> & | ! ~ && || ? : = += -= *= %= <<= >>= >>>= &= |= ^= => ** **= / /= }
-syn match   number	       "\d\+"
+syn match   number	       "\<\d\+\>"
 syn match   operators '\(<\|>\|<=\|>=\|==\|!=\|===\|!==\|+\|-\|\*\|%\|++\|--\|<<\|>>\|>>>\|&\||\|\^\|!\|\~\|&&\|||\|=\|+=\|-=\|\*=\|%=\|<<=\|>>=\|>>>=\|&=\||=\|\^=\|=>\|\*\*\|\*\*=\|/\|/=\|?\|:\|\.\.\.\)'
 
 syn keyword types		Array ArrayBuffer Boolean Date decodeURI encodeURI encodeURIComponent Error eval EvalError Float32Array Float64Array Function Int8Array Int16Array Int32Array isFinite isNan JSON Map Math Number Object parseFloat parseInt Promise Proxy RangeError ReferenceError Reflect RegExp Set String Symbol SyntaxError TypeError Uint8Array Uint8ClampedArray Uint16Array Uint32Array URIError WeakMap WeakSet
 
 syn keyword literals		null true false undefined
-syn region  string       start="\(\"\|'\)"  end="\(\"\|'\)"
+syn region  sstring             start="'" end="'" 
+syn region  dstring             start="\"" end="\""
 syn region  templstring       start="`"  end="`" contains=template
 syn region  template       start="${"  end="}" contained contains=types,operators,number,const,regex,frequentORglobal,literals,keywords,string
 
@@ -39,7 +40,8 @@ syn region  regex     start=+/[^/*]+me=e-1 skip=+\\\\\|\\/+ end=+/[gim]\{0,2\}\s
 
 hi def link types               Type
 hi def link functionsAndMethods Function
-hi def link string              String
+hi def link dstring              String
+hi def link sstring              String
 hi def link templstring         String
 hi def link template            Macro
 hi def link todo                Todo
