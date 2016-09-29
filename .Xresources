@@ -1,4 +1,5 @@
 URxvt.scrollBar: false
+URxvt.borderColor: #181818
 URxvt.termName: rxvt-unicode
 URxvt.font: xft:DejaVu Sans Mono:size=10
 URxvt.letterSpace: -2

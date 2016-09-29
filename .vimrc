@@ -67,7 +67,8 @@ filetype plugin indent on    " required
 
 syntax enable
 let base16colorspace=256
-colo base16-github
+set background=dark
+colo base16-default-dark
 
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
