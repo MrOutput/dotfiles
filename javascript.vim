@@ -24,7 +24,8 @@ syn keyword literals		null true false undefined
 syn region  sstring             start="'" end="'" 
 syn region  dstring             start="\"" end="\""
 syn region  templstring       start="`"  end="`" contains=template
-syn region  template       start="${"  end="}" contained contains=types,operators,number,const,regex,frequentORglobal,literals,keywords,string
+syn region  template       start="${"  end="}" contained contains=templateExpression
+syn match templateExpression "\(\${\)\@<=.\{-}}\@=" contained contains=types,operators,number,const,regex,frequentORglobal,literals,keywords,functionsAndMethods,dstring,sstring
 
 syn match functionsAndMethods	"\w\+(\@="
 
@@ -44,6 +45,7 @@ hi def link dstring              String
 hi def link sstring              String
 hi def link templstring         String
 hi def link template            Macro
+hi def link templateExpression            None
 hi def link todo                Todo
 hi def link keywords            Keyword
 hi def link operators           Keyword
