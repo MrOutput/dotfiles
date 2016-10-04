@@ -9,6 +9,9 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'digitaltoad/vim-pug'
+Plugin 'Shougo/neosnippet-snippets'
 
 Plugin 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_max_files = 100
@@ -21,19 +24,14 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_auto_select = 1
-let g:neocomplete#enable_smart_case = 1
 
 Plugin 'Shougo/neosnippet.vim'
-Plugin 'Shougo/neosnippet-snippets'
-let g:neosnippet#enable_completed_snippet = 1
+imap <C-c>     <Plug>(neosnippet_expand_or_jump)
+smap <C-c>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-c>     <Plug>(neosnippet_expand_target)
 if has('conceal')
     set conceallevel=2 concealcursor=niv
 endif
-imap <C-c>     <Plug>(neosnippet_expand_or_jump)
-
-Plugin 'mattn/emmet-vim'
-Plugin 'digitaltoad/vim-pug'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -55,7 +53,6 @@ let base16colorspace=256
 set background=dark
 colo base16-default-dark
 
-filetype plugin on
 set hlsearch
 set incsearch
 set nu
