@@ -10,10 +10,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
 Plugin 'ctrlpvim/ctrlp.vim'
+let g:ctrlp_max_files = 100
+let g:ctrlp_by_filename = 1
 let g:ctrlp_working_path_mode = 'wa'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
@@ -22,33 +21,19 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_auto_select = 1
 let g:neocomplete#enable_smart_case = 1
 
 Plugin 'Shougo/neosnippet.vim'
-" Plugin key-mappings.
-imap <C-c>     <Plug>(neosnippet_expand_or_jump)
-smap <C-c>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-c>     <Plug>(neosnippet_expand_target)
-
-imap <expr><TAB>
- \ pumvisible() ? "\<C-n>" :
- \ neosnippet#expandable_or_jumpable() ?
- \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-
 Plugin 'Shougo/neosnippet-snippets'
-Plugin 'mattn/emmet-vim'
-Plugin 'majutsushi/tagbar'
-nmap <f9> :TagbarToggle<cr>
+let g:neosnippet#enable_completed_snippet = 1
+if has('conceal')
+    set conceallevel=2 concealcursor=niv
+endif
+imap <C-c>     <Plug>(neosnippet_expand_or_jump)
 
+Plugin 'mattn/emmet-vim'
 Plugin 'digitaltoad/vim-pug'
-Plugin 'Chiel92/vim-autoformat'
-noremap <F5> :Autoformat<CR>
-let g:formatterpath = ["/usr/bin/astyle"]
-let g:formatter_c = ['c']
-let g:formatter_h = ['h']
-autocmd BufRead,BufNewFile *.h set filetype=c
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -71,32 +56,39 @@ set background=dark
 colo base16-default-dark
 
 filetype plugin on
-set omnifunc=syntaxcomplete#Complete
-
 set hlsearch
 set incsearch
 set nu
-set mouse=a
 set ignorecase
 set expandtab
 set shiftwidth=4
 set tabstop=4
-set autoindent
 set smartindent
-autocmd FileType html setlocal shiftwidth=4 tabstop=4
-autocmd FileType jade setlocal shiftwidth=4 tabstop=4
-autocmd FileType javascript setlocal expandtab shiftwidth=4 softtabstop=4
-autocmd FileType asm setlocal shiftwidth=8 tabstop=8 noexpandtab
 
-nmap <F12> :if exists("g:syntax_on") <Bar>
-\   syntax off <Bar>
-\ else <Bar>
-\   syntax enable <Bar>
-\ endif <CR>
-nmap <F2> :wa<CR>
-nmap <F3> :CtrlP<CR>
-nmap <F7> :tabprev<CR>
-nmap <F8> :tabnext<CR>
-nmap <S-Tab> :bprevious<CR>
-nmap <del> :bd<CR>
-nmap <tab> :bNext<CR>
+au FileType asm set syn=nasm sw=8 ts=8 noexpandtab
+
+
+let mapleader = "-"
+nmap <leader>h :h 
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>w :wa<cr>
+nnoremap <leader>db :bd<cr>
+
+nnoremap <tab> :bNext<CR>
+vnoremap <S-tab> :bprevious<CR>
+nnoremap <leader>rv :source $MYVIMRC<cr>
+nnoremap <space> <c-f>
+
+nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <enter> zz
+
+nnoremap <C-w>l <nop>
+nnoremap <C-w>h <nop>
+nnoremap <C-w>j <nop>
+nnoremap <C-w>k <nop>
+
+inoremap jk <esc>
+inoremap <esc> <nop>
