@@ -20,6 +20,7 @@ let g:ctrlp_working_path_mode = 'wa'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 Plugin 'Shougo/neocomplete.vim'
+let g:neocomplete#enable_auto_select = 1
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
@@ -70,6 +71,12 @@ nmap <leader>h :h
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>w :wa<cr>
 nnoremap <leader>db :bd<cr>
+
+function! togglePaste()
+    let &paste = !&paste
+    echo paste
+endfunction
+nnoremap <leader>p :let &paste = !&paste<cr>
 
 nnoremap <tab> :bNext<CR>
 vnoremap <S-tab> :bprevious<CR>
