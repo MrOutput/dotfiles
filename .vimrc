@@ -72,11 +72,13 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>w :wa<cr>
 nnoremap <leader>db :bd<cr>
 
-function! togglePaste()
-    let &paste = !&paste
-    echo paste
+function! TogglePaste()
+    let p = &g:paste
+    let &g:paste = !p
+    echo !p ? "PASTE ON" : "PASTE OFF"
 endfunction
-nnoremap <leader>p :let &paste = !&paste<cr>
+
+nnoremap <C-t> :call TogglePaste()<cr>
 
 nnoremap <tab> :bNext<CR>
 vnoremap <S-tab> :bprevious<CR>
