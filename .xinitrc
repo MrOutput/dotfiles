@@ -1,2 +1,3 @@
+xrdb -load ~/.Xresources
+urxvtd --quiet --opendisplay --fork
 exec i3
-xrdb -load ~/.Xresources &
