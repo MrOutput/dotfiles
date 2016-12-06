@@ -1,4 +1,3 @@
 xrdb -load ~/.Xresources
-urxvtd --quiet --opendisplay --fork
-./setBg.sh
+./GitHub/dotfiles/setBg.sh
 exec i3

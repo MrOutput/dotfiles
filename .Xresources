@@ -1,9 +1,8 @@
+#include "GitHub/dotfiles/base16-default-dark.Xresources"
+
 URxvt.scrollBar: false
-URxvt.borderColor: #181818
+URxvt.borderColor: base00
 URxvt.termName: rxvt-unicode
-! URxvt.font: xft:DejaVu Sans Mono:size=10
-! URxvt.letterSpace: -2
-! URxvt.cursorBlink: 1
 
 
 Xft.dpi:        96

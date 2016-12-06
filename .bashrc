@@ -1,8 +1,6 @@
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 
-"$HOME/GitHub/dotfiles/base16-default-dark.sh"
-
 alias vi=vim
 alias G=grep
 alias grep="grep --color=always"

@@ -50,7 +50,6 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax enable
-let base16colorspace=256
 set background=dark
 colo base16-default-dark
 
