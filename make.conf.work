@@ -1,0 +1,25 @@
+# These settings were set by the catalyst build script that automatically
+# built this stage.
+# Please consult /usr/share/portage/config/make.conf.example for a more
+# detailed example.
+CFLAGS="-march=skylake -O2 -pipe"
+CXXFLAGS="${CFLAGS}"
+MAKEOPTS="-j3"
+
+# WARNING: Changing your CHOST is not something that should be done lightly.
+# Please consult http://www.gentoo.org/doc/en/change-chost.xml before changing.
+CHOST="x86_64-pc-linux-gnu"
+# These are the USE and USE_EXPAND flags that were used for
+# buidling in addition to what is provided by the profile.
+USE="opencl -cups icu -selinux dbus gmp gnutls -static-libs -xinerama xft vaapi nptl X threads aac acpi -alsa apm bash-completion -bluetooth curl dri ftp git ipv6 jpeg mime -mp3 -mp4 mtp ncurses openmp pcre pdf png posix qt4 qt5 rdesktop readline rss smp spell ssl svg truetype udev unicode upower usb vim-syntax -wayland wifi x264 -systemd radius opengl -java gzip -bindist -pulseaudio ffmpeg"
+PORTDIR="/usr/portage"
+DISTDIR="${PORTDIR}/distfiles"
+PKGDIR="${PORTDIR}/packages"
+ABI_X86="64"
+
+GENTOO_MIRRORS="ftp://ftp.gtlib.gatech.edu/pub/gentoo"
+VIDEO_CARDS="intel i965"
+INPUT_DEVICES="evdev synaptics"
+CPU_FLAGS_X86="aes avx avx2 fma3 mmx mmxext popcnt sse sse2 sse3 sse4_1 sse4_2 ssse3"
+L10N=""
+LINGUAS=""
