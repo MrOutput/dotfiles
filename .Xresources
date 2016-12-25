@@ -1,6 +1,5 @@
-#include "GitHub/dotfiles/base16-default-dark.Xresources"
+#include "GitHub/dotfiles/base16-monokai.Xresources"
 
 URxvt.scrollBar: false
-URxvt.borderColor: base00
-URxvt.font: xft:DejaVu Sans Mono:size=8
+URxvt.font: xft:Droid Sans Mono:size=10
 URxvt.letterSpace: -1

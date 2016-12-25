@@ -62,8 +62,8 @@ set shiftwidth=4
 set tabstop=4
 set smartindent
 
-au FileType asm set syn=nasm sw=8 ts=8 noexpandtab
-
+au FileType asm set syn=nasm sw=8 ts=8 noet
+au FileType c set sw=8 ts=8 noet
 
 let mapleader = "-"
 nmap <leader>h :h 
