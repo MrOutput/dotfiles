@@ -51,7 +51,8 @@ filetype plugin indent on    " required
 
 syntax enable
 set background=dark
-colo base16-default-dark
+let base16colorspace=256
+colo base16-materia
 
 set hlsearch
 set incsearch
@@ -61,6 +62,8 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set smartindent
+hi Comment cterm=italic
+hi Keyword cterm=bold
 
 au FileType asm set syn=nasm sw=8 ts=8 noet
 au FileType c set sw=8 ts=8 noet

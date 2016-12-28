@@ -1,3 +1,5 @@
+source /home/rafael/GitHub/dotfiles/base16-materia.sh
+
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 

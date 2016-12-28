@@ -1,6 +1,8 @@
+" vi:syntax=vim
+
 " base16-vim (https://github.com/chriskempson/base16-vim)
 " by Chris Kempson (http://chriskempson.com)
-" Default Dark scheme by Chris Kempson (http://chriskempson.com)
+" Materia scheme by Defman21
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts
@@ -8,27 +10,27 @@
 "   let g:base16_shell_path=base16-builder/output/shell/
 if !has('gui_running')
   if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/base16-default-dark.sh"
+    execute "silent !/bin/sh ".g:base16_shell_path."/base16-materia.sh"
   endif
 endif
 
 " GUI color definitions
-let s:gui00 = "181818"
-let s:gui01 = "282828"
-let s:gui02 = "383838"
-let s:gui03 = "585858"
-let s:gui04 = "b8b8b8"
-let s:gui05 = "d8d8d8"
-let s:gui06 = "e8e8e8"
-let s:gui07 = "f8f8f8"
-let s:gui08 = "ab4642"
-let s:gui09 = "dc9656"
-let s:gui0A = "f7ca88"
-let s:gui0B = "a1b56c"
-let s:gui0C = "86c1b9"
-let s:gui0D = "7cafc2"
-let s:gui0E = "ba8baf"
-let s:gui0F = "a16946"
+let s:gui00 = "263238"
+let s:gui01 = "2C393F"
+let s:gui02 = "37474F"
+let s:gui03 = "707880"
+let s:gui04 = "C9CCD3"
+let s:gui05 = "CDD3DE"
+let s:gui06 = "D5DBE5"
+let s:gui07 = "FFFFFF"
+let s:gui08 = "EC5F67"
+let s:gui09 = "EA9560"
+let s:gui0A = "FFCC00"
+let s:gui0B = "8BD649"
+let s:gui0C = "80CBC4"
+let s:gui0D = "89DDFF"
+let s:gui0E = "82AAFF"
+let s:gui0F = "EC5F67"
 
 " Terminal color definitions
 let s:cterm00 = "00"
@@ -60,7 +62,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "base16-default-dark"
+let g:colors_name = "base16-materia"
 
 " Highlighting function
 fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
@@ -187,8 +189,21 @@ call <sid>hi("DiffLine",     s:gui0D, s:gui00,  s:cterm0D, s:cterm00, "", "")
 call <sid>hi("DiffRemoved",  s:gui08, s:gui00,  s:cterm08, s:cterm00, "", "")
 
 " Git highlighting
-call <sid>hi("gitCommitOverflow",  s:gui08, "", s:cterm08, "", "", "")
-call <sid>hi("gitCommitSummary",   s:gui0B, "", s:cterm0B, "", "", "")
+call <sid>hi("gitcommitOverflow",       s:gui08, "", s:cterm08, "", "", "")
+call <sid>hi("gitcommitSummary",        s:gui0B, "", s:cterm0B, "", "", "")
+call <sid>hi("gitcommitComment",        s:gui03, "", s:cterm03, "", "", "")
+call <sid>hi("gitcommitUntracked",      s:gui03, "", s:cterm03, "", "", "")
+call <sid>hi("gitcommitDiscarded",      s:gui03, "", s:cterm03, "", "", "")
+call <sid>hi("gitcommitSelected",       s:gui03, "", s:cterm03, "", "", "")
+call <sid>hi("gitcommitHeader",         s:gui0E, "", s:cterm0E, "", "", "")
+call <sid>hi("gitcommitSelectedType",   s:gui0D, "", s:cterm0D, "", "", "")
+call <sid>hi("gitcommitUnmergedType",   s:gui0D, "", s:cterm0D, "", "", "")
+call <sid>hi("gitcommitDiscardedType",  s:gui0D, "", s:cterm0D, "", "", "")
+call <sid>hi("gitcommitBranch",         s:gui09, "", s:cterm09, "", "bold", "")
+call <sid>hi("gitcommitUntrackedFile",  s:gui0A, "", s:cterm0A, "", "", "")
+call <sid>hi("gitcommitUnmergedFile",   s:gui08, "", s:cterm08, "", "bold", "")
+call <sid>hi("gitcommitDiscardedFile",  s:gui08, "", s:cterm08, "", "bold", "")
+call <sid>hi("gitcommitSelectedFile",   s:gui0B, "", s:cterm0B, "", "bold", "")
 
 " GitGutter highlighting
 call <sid>hi("GitGutterAdd",     s:gui0B, s:gui01, s:cterm0B, s:cterm01, "", "")
@@ -239,7 +254,6 @@ call <sid>hi("pythonRepeat",    s:gui0E, "", s:cterm0E, "", "", "")
 " Ruby highlighting
 call <sid>hi("rubyAttribute",               s:gui0D, "", s:cterm0D, "", "", "")
 call <sid>hi("rubyConstant",                s:gui0A, "", s:cterm0A, "", "", "")
-call <sid>hi("rubyInterpolation",           s:gui0B, "", s:cterm0B, "", "", "")
 call <sid>hi("rubyInterpolationDelimiter",  s:gui0F, "", s:cterm0F, "", "", "")
 call <sid>hi("rubyRegexp",                  s:gui0C, "", s:cterm0C, "", "", "")
 call <sid>hi("rubySymbol",                  s:gui0B, "", s:cterm0B, "", "", "")

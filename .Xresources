@@ -1,5 +1,4 @@
-#include "GitHub/dotfiles/base16-monokai.Xresources"
+#include "GitHub/dotfiles/base16-materia-256.Xresources"
 
 URxvt.scrollBar: false
-URxvt.font: xft:Droid Sans Mono:size=10
-URxvt.letterSpace: -1
+URxvt.font: xft:Liberation Mono:size=10
