@@ -52,7 +52,7 @@ filetype plugin indent on    " required
 syntax enable
 set background=dark
 let base16colorspace=256
-colo base16-materia
+colo base16-default-dark
 
 set hlsearch
 set incsearch

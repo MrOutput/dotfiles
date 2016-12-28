@@ -1,4 +1,4 @@
-source /home/rafael/GitHub/dotfiles/base16-materia.sh
+source /home/rafael/GitHub/dotfiles/base16-default-dark.sh
 
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim

@@ -1,22 +1,22 @@
-! Base16 Materia
-! Scheme: Defman21
+! Base16 Default Dark
+! Scheme: Chris Kempson (http://chriskempson.com)
 
-#define base00 #263238
-#define base01 #2C393F
-#define base02 #37474F
-#define base03 #707880
-#define base04 #C9CCD3
-#define base05 #CDD3DE
-#define base06 #D5DBE5
-#define base07 #FFFFFF
-#define base08 #EC5F67
-#define base09 #EA9560
-#define base0A #FFCC00
-#define base0B #8BD649
-#define base0C #80CBC4
-#define base0D #89DDFF
-#define base0E #82AAFF
-#define base0F #EC5F67
+#define base00 #181818
+#define base01 #282828
+#define base02 #383838
+#define base03 #585858
+#define base04 #b8b8b8
+#define base05 #d8d8d8
+#define base06 #e8e8e8
+#define base07 #f8f8f8
+#define base08 #ab4642
+#define base09 #dc9656
+#define base0A #f7ca88
+#define base0B #a1b56c
+#define base0C #86c1b9
+#define base0D #7cafc2
+#define base0E #ba8baf
+#define base0F #a16946
 
 *.foreground:   base05
 *.background:   base00
