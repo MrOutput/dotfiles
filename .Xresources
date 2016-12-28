@@ -2,3 +2,4 @@
 
 URxvt.scrollBar: false
 URxvt.font: xft:Liberation Mono:size=10
+URxvt.letterSpace: -1
