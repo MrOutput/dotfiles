@@ -67,6 +67,7 @@ hi Keyword cterm=bold
 
 au FileType asm set syn=nasm sw=8 ts=8 noet
 au FileType c set sw=8 ts=8 noet
+au FileType c hi Keyword cterm=italic
 
 let mapleader = "-"
 nmap <leader>h :h 

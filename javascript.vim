@@ -29,7 +29,7 @@ syn match templateExpression "\(\${\)\@<=.\{-}}\@=" contained contains=types,ope
 
 syn match functionsAndMethods	"\w\+(\@="
 
-syn keyword todo                TODO contained
+syn keyword todo                TODO FIXME contained
 syn match   linecomment      "\/\/.*" contains=todo
 syn region  multilinecomment       start="/\*"  end="\*/" contains=todo
 syn keyword  frequentORglobal       length prototype document event window console global exports module process require __dirname __filename
