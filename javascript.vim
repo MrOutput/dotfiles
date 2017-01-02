@@ -48,7 +48,7 @@ hi def link template            Macro
 hi def link templateExpression            None
 hi def link todo                Todo
 hi def link keywords            Keyword
-hi def link operators           Keyword
+hi def link operators           Operator
 hi def link comment             Comment
 hi def link linecomment         Comment
 hi def link multilinecomment    Comment
