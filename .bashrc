@@ -1,7 +1,9 @@
 source /home/rafael/GitHub/dotfiles/base16-default-dark.sh
+source /home/rafael/GitHub/dotfiles/go.sh
 
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
+
 
 alias vi=vim
 alias G=grep
