@@ -62,6 +62,7 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set smartindent
+set colorcolumn=80
 hi Comment cterm=italic
 hi Keyword cterm=bold
 
