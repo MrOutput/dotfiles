@@ -60,18 +60,17 @@ set hlsearch
 set incsearch
 set nu
 set ignorecase
-set expandtab
-set shiftwidth=4
-set tabstop=4
 set smartindent
+set shiftwidth=8
+set tabstop=8
 set colorcolumn=80
+set textwidth=80
+set formatoptions=tc
 hi Comment cterm=italic
 hi Keyword cterm=bold
 
-au FileType asm set syn=nasm sw=8 ts=8 noet
-au FileType c set sw=8 ts=8 noet
-
-au FileType go nmap <leader>r :GoRun<cr>
+au FileType javascript set sw=4 ts=4 et
+au FileType html set sw=4 ts=4 et
 
 let mapleader = "-"
 nmap <leader>h :h 
