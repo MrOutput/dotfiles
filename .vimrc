@@ -71,6 +71,8 @@ hi Keyword cterm=bold
 au FileType asm set syn=nasm sw=8 ts=8 noet
 au FileType c set sw=8 ts=8 noet
 
+au FileType go nmap <leader>r :GoRun<cr>
+
 let mapleader = "-"
 nmap <leader>h :h 
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
