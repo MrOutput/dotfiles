@@ -61,16 +61,16 @@ set incsearch
 set nu
 set ignorecase
 set smartindent
-set shiftwidth=8
-set tabstop=8
+
+set shiftwidth=4
+set tabstop=4
+set expandtab
+
 set colorcolumn=80
 set textwidth=80
 set formatoptions=tc
 hi Comment cterm=italic
 hi Keyword cterm=bold
-
-au FileType javascript set sw=4 ts=4 et
-au FileType html set sw=4 ts=4 et
 
 let mapleader = "-"
 nmap <leader>h :h 
