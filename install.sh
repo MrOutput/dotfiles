@@ -7,6 +7,7 @@ ln -s $dotfiles/.bashrc		$HOME
 ln -s $dotfiles/.gitconfig	$HOME
 ln -s $dotfiles/.vimrc		$HOME
 ln -s $dotfiles/.xinitrc	$HOME
+ln -s $dotfiles/.toprc  	$HOME
 
 mkdir -p $HOME/.vim/{colors,syntax}
 ln -s $dotfiles/base16-default-dark.vim	$HOME/.vim/colors
