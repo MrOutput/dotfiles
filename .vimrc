@@ -67,6 +67,9 @@ set shiftwidth=4
 set tabstop=4
 set expandtab
 
+"disable wrapping form html files
+au BufRead html set textwidth=0
+
 set colorcolumn=80
 set textwidth=80
 set formatoptions=tc
