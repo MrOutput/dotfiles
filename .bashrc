@@ -2,6 +2,7 @@ source /home/rafael/GitHub/dotfiles/base16-default-dark.sh
 source /home/rafael/GitHub/dotfiles/go.sh
 source /home/rafael/GitHub/dotfiles/git.plugin.sh
 
+export PS1="\[\033]0;\u@\h:\w\007\]\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] "
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 
