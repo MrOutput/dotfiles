@@ -17,7 +17,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_max_files = 100
 let g:ctrlp_by_filename = 1
 let g:ctrlp_working_path_mode = 'wa'
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+" let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 Plugin 'Shougo/neocomplete.vim'
 let g:neocomplete#enable_auto_select = 1
@@ -37,6 +37,7 @@ endif
 Plugin 'fatih/vim-go'
 Plugin 'rust-lang/rust.vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'easymotion/vim-easymotion'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -68,12 +69,7 @@ set shiftwidth=4
 set tabstop=4
 set expandtab
 
-"disable wrapping form html files
-au BufRead html set textwidth=0
-
 set colorcolumn=80
-set textwidth=80
-set formatoptions=tc
 hi Comment cterm=italic
 hi Keyword cterm=bold
 
