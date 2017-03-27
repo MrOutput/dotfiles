@@ -1,1 +1,1 @@
-feh --no-fehbg --bg-fill ./Downloads/image.jpg
+feh --no-fehbg --bg-fill ./Downloads/image.png
