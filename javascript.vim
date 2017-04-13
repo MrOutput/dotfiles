@@ -12,7 +12,7 @@ elseif exists("b:current_syntax") && b:current_syntax == "javascript"
 endif
 
 
-syn keyword keywords break do in typeof case else instanceof var catch export new void class extends return while const finally super with continue for switch yield debugger function this default if throw delete import try let yield static arguments
+syn keyword keywords break do in typeof case else instanceof var catch export new void class extends return while const finally super with continue for switch yield debugger function this default if throw delete import try let yield static arguments async await
 
 "punctuators { ( ) [ ] . ... ; , < > <= >= == != === !== + - * % ++ -- << >> >>> & | ! ~ && || ? : = += -= *= %= <<= >>= >>>= &= |= ^= => ** **= / /= }
 syn match   number	       "\<\d\+\>"
