@@ -14,7 +14,7 @@ Plugin 'digitaltoad/vim-pug'
 Plugin 'Shougo/neosnippet-snippets'
 
 Plugin 'ctrlpvim/ctrlp.vim'
-let g:ctrlp_max_files = 100
+let g:ctrlp_max_files = 500
 let g:ctrlp_by_filename = 1
 let g:ctrlp_working_path_mode = 'wa'
 " let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
