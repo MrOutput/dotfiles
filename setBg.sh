@@ -1,1 +1,1 @@
-feh --no-fehbg --bg-fill ./Downloads/image.png
+feh --no-fehbg --bg-fill $HOME/Downloads/image.png
