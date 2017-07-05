@@ -1,5 +1,5 @@
 #include "GitHub/dotfiles/base16-default-dark-256.Xresources"
 
 URxvt.scrollBar: false
-URxvt.font: xft:Liberation Mono:size=12
+URxvt.font: xft:Liberation Mono:size=11
 URxvt.letterSpace: -1

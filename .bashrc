@@ -1,5 +1,5 @@
 source /home/rafael/GitHub/dotfiles/base16-default-dark.sh
-source /home/rafael/GitHub/dotfiles/go.sh
+ source /home/rafael/GitHub/dotfiles/go.sh
 source /home/rafael/GitHub/dotfiles/git.plugin.sh
 source /home/rafael/.cargo/env
 
