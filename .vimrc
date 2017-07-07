@@ -70,8 +70,11 @@ set tabstop=4
 set expandtab
 
 set colorcolumn=80
-hi Comment cterm=italic
-hi Keyword cterm=bold
+set cursorline
+"hi Comment cterm=italic
+hi Keyword cterm=italic
+hi CursorLine ctermbg=none ctermfg=none
+hi CursorLineNr cterm=inverse
 
 let mapleader = "-"
 nmap <leader>h :h 
