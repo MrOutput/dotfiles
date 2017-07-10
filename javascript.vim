@@ -15,8 +15,9 @@ endif
 syn keyword keywords break do in typeof case else instanceof var catch export new void class extends return while const finally super with continue for switch yield debugger function this default if throw delete import try let yield static arguments async await
 
 "punctuators { ( ) [ ] . ... ; , < > <= >= == != === !== + - * % ++ -- << >> >>> & | ! ~ && || ? : = += -= *= %= <<= >>= >>>= &= |= ^= => ** **= / /= }
-syn match   number	       "\<\d\+\(\.\d\+\(e\(+\|\-\)\?\d\+\)\?\)\?\>"
 syn match   operators '\(<\|>\|<=\|>=\|==\|!=\|===\|!==\|+\|-\|\*\|%\|++\|--\|<<\|>>\|>>>\|&\||\|\^\|!\|\~\|&&\|||\|=\|+=\|-=\|\*=\|%=\|<<=\|>>=\|>>>=\|&=\||=\|\^=\|=>\|\*\*\|\*\*=\|/\|/=\|?\|:\|\.\.\.\)'
+syn match   number	       "\<\(+\|-\)\?\d\+\(\.\d\+\)\?\(e\(+\|-\)\?\d\+\)\?"
+
 
 syn keyword types		Array ArrayBuffer Boolean Date decodeURI encodeURI encodeURIComponent Error eval EvalError Float32Array Float64Array Function Int8Array Int16Array Int32Array isFinite isNan JSON Map Math Number Object parseFloat parseInt Promise Proxy RangeError ReferenceError Reflect RegExp Set String Symbol SyntaxError TypeError Uint8Array Uint8ClampedArray Uint16Array Uint32Array URIError WeakMap WeakSet
 
@@ -55,8 +56,8 @@ hi def link multilinecomment    Comment
 hi def link literals            Number
 hi def link regex               Number
 hi def link frequentORglobal    Number
-hi def link number              Number
 hi def link const               Number
+hi def link number              Number
 
 let b:current_syntax = "javascript"
 if main_syntax == 'javascript'
