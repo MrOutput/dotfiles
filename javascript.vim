@@ -16,7 +16,7 @@ syn keyword keywords break do in typeof case else instanceof var catch export ne
 
 "punctuators { ( ) [ ] . ... ; , < > <= >= == != === !== + - * % ++ -- << >> >>> & | ! ~ && || ? : = += -= *= %= <<= >>= >>>= &= |= ^= => ** **= / /= }
 syn match   operators '\(<\|>\|<=\|>=\|==\|!=\|===\|!==\|+\|-\|\*\|%\|++\|--\|<<\|>>\|>>>\|&\||\|\^\|!\|\~\|&&\|||\|=\|+=\|-=\|\*=\|%=\|<<=\|>>=\|>>>=\|&=\||=\|\^=\|=>\|\*\*\|\*\*=\|/\|/=\|?\|:\|\.\.\.\)'
-syn match   number	       "\<\(+\|-\)\?\d\+\(\.\d\+\)\?\(e\(+\|-\)\?\d\+\)\?"
+syn match   number	       "\<\(\(0[oO]\o\+\)\|\(0[xX]\x\+\)\|\(0[bB][01]\+\)\|\(\(+\|-\)\?\d\+\(\.\d\+\)\?\(e\(+\|-\)\?\d\+\)\?\)\)"
 
 
 syn keyword types		Array ArrayBuffer Boolean Date decodeURI encodeURI encodeURIComponent Error eval EvalError Float32Array Float64Array Function Int8Array Int16Array Int32Array isFinite isNan JSON Map Math Number Object parseFloat parseInt Promise Proxy RangeError ReferenceError Reflect RegExp Set String Symbol SyntaxError TypeError Uint8Array Uint8ClampedArray Uint16Array Uint32Array URIError WeakMap WeakSet
